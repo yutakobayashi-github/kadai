@@ -2,9 +2,9 @@
 session_start();  
 
 // CSRF対策
-    // if (!isset($_POST['token']) || $_POST['token'] !== getToken()) {
-    //     exit('処理を正常に完了できませんでした');
-    // }
+//     if (!isset($_POST['token']) || $_POST['token'] !== getToken()) {
+//         exit('処理を正常に完了できませんでした');
+//     }
   
 if( isset($_POST['send']) ) {
     header('Location: complete.php');
